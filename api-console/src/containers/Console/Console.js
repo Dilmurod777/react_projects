@@ -18,7 +18,8 @@ class Console extends Component {
         ? <SweetAlert
           danger
           showCancel
-          confirmBtnText="Yes, delete it!"
+          cancelBtnText="Отмена"
+          confirmBtnText="Согласен!"
           confirmBtnBsStyle="danger"
           title="Are you sure?"
           onConfirm={this.props.confirmDelete}
