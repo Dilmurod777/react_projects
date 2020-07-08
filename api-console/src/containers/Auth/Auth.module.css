@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.Auth {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E5E5E5;
+}
+
+.Auth p{
+    margin: 0;
+    padding: 0;
+}
+
+.Auth__inner_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Auth__inner_div__formSection {
+    width: 520px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 40px 30px;
+    margin-top: 20px;
+}
+
+.Auth__inner_div__formSection_h1 {
+    color: #0D0D0D;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+}
