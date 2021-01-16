@@ -1,0 +1,65 @@
+.description {
+  width: 30%;
+  padding: 10px 15px;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .country_info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    img {
+      width: 50px;
+      margin: 0 5px 0 0;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin: 0 5px 0 0;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+
+  .details {
+    margin: 10px 0 0 0;
+  }
+
+  .vaccines {
+    position: relative;
+    height: 160px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .vaccines::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .description {
+    width: 100%;
+
+    .vaccines{
+      height: 300px;
+    }
+  }
+}

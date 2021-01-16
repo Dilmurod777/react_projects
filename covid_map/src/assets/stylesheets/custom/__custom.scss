@@ -1,0 +1,34 @@
+.upper_row {
+  margin: 0;
+  padding: 0;
+  max-width: 100% !important;
+  display: flex;
+  flex-direction: row;
+
+  .map {
+    width: 68%;
+    height: 50vh;
+  }
+
+  .map-base {
+    height: 100%;
+  }
+}
+
+.lower_row {
+  margin: 15px 0 10px 0;
+  padding: 0;
+  max-width: 100% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .upper_row {
+    flex-direction: column;
+
+    .map {
+      width: 100%;
+      max-width: 100% !important;
+    }
+  }
+}
+
