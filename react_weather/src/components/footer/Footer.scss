@@ -1,0 +1,26 @@
+.Footer {
+  height: 100px;
+  width: 60%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  > .SwitchButtons {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > svg {
+      cursor: pointer;
+    }
+  }
+
+  > .CurrentTime {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #707070;
+  }
+}

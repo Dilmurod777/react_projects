@@ -1,0 +1,79 @@
+.Home {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 160px - 100px);
+  padding: 50px 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  animation-name: staticHomeAnimation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 4s;
+  animation-timing-function: ease-in-out;
+
+  @keyframes staticHomeAnimation {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    50%  {
+      transform: rotateX(25deg) rotateY(25deg);
+    }
+  }
+
+  > .Loader {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+  }
+
+  > .Background {
+    width: 80%;
+    height: 100%;
+  }
+
+  > .CityName {
+    position: absolute;
+    content: "";
+    top: 200px;
+    left: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 170px;
+    color: #FFFFFF;
+    text-shadow: -5px 5px 20px #707070;
+  }
+
+  > .CurrentWeather {
+    position: absolute;
+    z-index: 100;
+    content: "";
+    bottom: 0;
+    right: calc(100vw * 0.15);
+    width: 350px;
+    height: 220px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 50px #707070;
+
+    > .Value {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-size: 115px;
+      color: #858585;
+    }
+
+    > .DegreeSettings {
+      position: absolute;
+      content: '';
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+    }
+  }
+}

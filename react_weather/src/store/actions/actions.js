@@ -1,0 +1,8 @@
+export const NEXT_PLACE = "NEXT_PLACE"
+export const PREV_PLACE = "PREV_PLACE"
+export const SET_PLACE = "SET_PLACE"
+
+export const SET_DEGREE_VALUE = "SET_DEGREE_VALUE"
+export const SET_DEGREE_TYPE = "SET_DEGREE_TYPE"
+
+export const SET_WEATHER_LOADING = "SET_WEATHER_LOADING"

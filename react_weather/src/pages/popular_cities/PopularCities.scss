@@ -1,0 +1,11 @@
+.PopularCities {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 160px - 100px);
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-row-gap: 2px;
+  grid-column-gap: 2px;
+}
