@@ -1,0 +1,18 @@
+.PostDetails h2{
+	font-size: 20px;
+	color: #f1356d;
+	margin-bottom : 10px;
+}
+
+.PostDetails div{
+	margin: 20px 0;
+}
+
+.PostDetails button{
+	background: #f1356d;
+	color: #fff;
+	border: 0;
+	padding: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+}

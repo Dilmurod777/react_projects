@@ -1,0 +1,21 @@
+.NotFound h2{
+	font-size: 20px;
+	color: #f1356d;
+	margin-bottom : 10px;
+}
+
+.NotFound p{
+	margin-top: 8px;
+	margin-bottom: 16px;
+}
+
+.NotFound a{
+	display: inline-block;
+	text-decoration: none;
+	background: #f1356d;
+	color: #fff;
+	border: 0;
+	padding: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+}
