@@ -1,0 +1,155 @@
+@import '../../assets/css/colors.css';
+
+.Navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 22px 90px 22px 40px;
+}
+
+.Navbar .Left{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Navbar .Left img{
+	height: 40px;
+}
+
+.Navbar .Left a{
+	text-decoration: none;
+	color: var(--black1);
+	font-family: 'Lato', serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 29px;
+	position: relative;
+	z-index: 0;
+}
+
+.Navbar .Left a.Active{
+	color: var(--lightblue);
+	margin: 0 50px;
+}
+
+.Navbar .Left a.Active::before{
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: -10;
+	top: calc(50% - 18px);
+	left: calc(50% - 53px);
+	border-radius: 20px;
+	background: linear-gradient(0.3turn, var(--lightblue), var(--violet));
+	height: 36px;
+	width: 106px;
+}
+
+.Navbar .Left a.Active::after{
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: -5;
+	top: calc(50% - 18px + 2px);
+	left: calc(50% - 53px + 2px);
+	border-radius: 20px;
+	background: var(--black5);
+	height: calc(36px - 4px);
+	width: calc(106px - 4px);
+}
+
+.Navbar .Left a:not(.Active)::after{
+	content: '';
+	position: absolute;
+	bottom: -6px;
+	left: 50%;
+	transform: translateY(50%);
+	width: 6px;
+	height: 6px;
+	background: var(--lightblue);
+	border-radius: 50%;
+	opacity: 0;
+	transition: opacity 250ms ease-in-out;
+}
+
+.Navbar .Left a:not(.Active):hover::after{
+	opacity: 100%;
+}
+
+.Navbar .Right{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Navbar .Right .Search{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: 40px;
+	width: 200px;
+	padding: 0 10px 0 40px;
+	margin-right: 30px;
+	background: var(--black1-with-opacity);
+	border-radius: 80px;
+}
+
+.Navbar .Right .Search .SearchIcon{
+	position: absolute;
+	left: 15px;
+	right: calc(50% - 5px);
+	color: var(--white);
+}
+
+.Navbar .Right .Search input{
+	background: transparent;
+	border: none;
+	font-family: 'Lato', serif;
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--white);
+}
+
+.Navbar .Right .Search input::placeholder{
+	color: var(--white);
+}
+
+.Navbar .Right .Search input:active,
+.Navbar .Right .Search input:focus,
+.Navbar .Right .Search input:focus-visible{
+	border: none;
+	outline: none;
+}
+
+.Navbar .Right .Account{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Navbar .Right .Avatar{
+	width: 30px;
+	height: 30px;
+	border: 1px solid var(--white);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--white);
+	margin-right: 12px;
+}
+
+.Navbar .Right .Account p{
+	font-family: 'Lato', serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: var(--white);
+	margin-right: 5px;
+}
+
+.Navbar .Right .Account .Menu{
+	color: var(--white);
+	cursor: pointer;
+}
